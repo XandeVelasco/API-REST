@@ -1,4 +1,4 @@
-const mongoConfig = require('./configs/mongoConfig.js');
+const mongoConfig = require('../configs/mongoConfig.js');
 
 if (!mongoConfig)
   throw new Error('Unable to get database mongoConfig');
