@@ -1,6 +1,6 @@
 let env = process.env.ENV || 'development';
 let mongoConfig = {
-    'development' : "mongodb+srv://heroku:74Iq3SSGNUuzD4xG@xandeletro-4to4o.mongodb.net/test?retryWrites=true&w=majority",
+    'development': process.env.ACCOUNT,
     'homolog': 'mongodb://localhost:27017/hml',
     'production': 'mongodb://localhost:27017/prd'
 };
