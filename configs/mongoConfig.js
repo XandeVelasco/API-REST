@@ -1,4 +1,3 @@
-  
 let env = process.env.ENV || 'development';
 let mongoConfig = {
     'development': process.env.ACCOUNT,

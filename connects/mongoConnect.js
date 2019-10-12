@@ -1,4 +1,4 @@
-const mongoConfig = require('../configs/mongoConfig.js');
+let mongoConfig = require('../configs/mongoConfig.js');
 
 if (!mongoConfig)
   throw new Error('Unable to get database mongoConfig');
@@ -10,7 +10,7 @@ mongoose.config = mongoConfig;
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoConfig, { useNewUrlParser: true, useUnifiedTopology:true });
 
-const db = mongoose.connection;
+let db = mongoose.connection;
 
 db.on('error', function () {
   throw new Error('unable to connect to database at ' + mongoConfig);
