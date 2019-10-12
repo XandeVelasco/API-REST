@@ -1,0 +1,5 @@
+Arquivos e ou documentos necessarios
+
+mongodb
+heroku
+express
